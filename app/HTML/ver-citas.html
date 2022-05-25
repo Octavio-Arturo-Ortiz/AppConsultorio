@@ -18,15 +18,17 @@
     </div>
 
     <section class="search">
-        <input type="date">
-        <input type="submit" value="Buscar">
+        <input type="date" id="dtFecha">
+        <input type="button" value="Buscar" onclick="filtrarFecha()">
+        &backepsilon;<input type="button" id="btnRemoverFiltro" value="Limpiar Filtro" onclick="removerFiltroFecha()" disabled>
     </section>
 
     <section class="formulario">
-        <p id="fecha-cita">citas del dia: (fecha seleccionada)</p>
+        <p id="fecha-cita">citas del dia: <span id="selectedFecha">(Seleccione una fecha)</span></p>
         
         <table class="datos-clientes">
             <tr>
+                <th>Fecha</th>
                 <th>Hora</th>
                 <th>Paciente</th>
             </tr>

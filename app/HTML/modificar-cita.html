@@ -7,22 +7,21 @@
     <title>Nombre Consultorio</title>
     <link rel="stylesheet" href="/CSS/styles.css">
 </head>
-<!--Esta funcion llena el listado de los pacientes-->
-<body onload="popularLista()">
+<body onload="cargarDatosCita()">
 
     <header class="header">
         <img src="/IMG/logo index.png" alt="logo-consultorio.png">
     </header>
 
     <main class="formulario">
-        <h1>Formulario de registro de Cita</h1>
+        <h1>Modificacion de Cita</h1>
         <h2>Ingrese los datos:</h2>
 
-        <form id="form-registrar-cita">
+        <form id="modificar-cita">
             <div class="input">
                 <label for="lista-pacientes" class="label">Paciente:</label>
                 <select name="paciente" id="lista-pacientes">
-                    <option value=""> --- </option>
+                    <option value="0"> --- </option>
                 </select>
             </div>
             <div class="input">
@@ -33,14 +32,12 @@
                 <label for="hora-cita" class="label">Hora de cita:</label>
                 <input type="time" id="hora-cita">
             </div>
-
-            <input id="registrar-cita" type="button" value="Registrar" onclick="registrarCita()">
-            
+            <input id="registrar-cita" type="button" value="Modificar" onclick="actualizarCita()">
         </form>
 
         
     <div class="boton-regreso">
-        <a href="/HTML/index.html">Regresar</a>
+        <a href="/HTML/ver-citas.html">Regresar</a>
     </div>
     
     </main>
