@@ -395,6 +395,39 @@ function removerFiltroNombre(){
     document.getElementById("btnRemoverFiltro").setAttribute("disabled", "");
 }
 
+//CREACION DE MENSAJES AL HACER CLICK
+
+//Boton Cerrar sesion
+
+function cerrarSesion()
+    {
+        alert("Se ha cerrado la sesión con exito !");
+    }
+
+//Mensaje modificar cita
+
+function ModificarCita(){
+    alert("Se ha modificado la cita con exito !");
+}
+
+//Modificar datos
+
+function ModificarDatos(){
+    alert("Se han modificado los datos con exito !");
+}
+
+//Alta paciente
+
+function AltaPaciente(){
+    alert("Los datos del paciente se han registrado con exito!");
+}
+
+//Alta cita
+
+function AltaCita(){
+    alert("Se ha creado una nueva cita con exito!");
+}
+
 
 /*
 Recursos para js:
